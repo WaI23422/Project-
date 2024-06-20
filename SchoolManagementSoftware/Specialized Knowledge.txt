@@ -1,0 +1,38 @@
+Three-tier architecture (Multitier Architecture) is a well-established software application 
+architecture that organizes applications into three logical and physical computing tiers:
+    - The presentation tier, or user interface; (GUI)
+    - The application tier, where data is processed; (BLL - DTO) 
+    - The data tier, where application data is stored and managed. (DAL)
+
+BLL (Business Logic Layer): act as an intermediate between the Presentation Layer and the 
+Data Access Layer (DAL). This layer handles the business logic, business rules as well as 
+calculations. It tells how the data from the database can be used, what it can perform, 
+and what can not within its application.
+
+DAL (Data Access Layer):  provides simplified access to data stored in persistent storage 
+of some kind, such as an entity-relational database.
+
+DTO (Data transfer object): are classes that encapsulate data to transfer between client 
+- server or between services in microservices. The purpose of creating DTO is to reduce 
+the amount of unnecessary information being transmitted, and also increase security.
+
+GUI (Graphic User Interface): involves designing windows, dialogs, buttons, etc which are 
+all interactive user interface components. Then we control these widgets using event 
+handlers like onClick, onHover, etc.
+
+Utils : provides a set of utility methods that can be used to perform synchronization 
+operations and create new objects.
+
+Benefits (compared to single- or two-tier architecture) include:
+    - Faster development: Because each tier can be developed simultaneously by different 
+    teams, an organization can bring the application to market faster. And programmers 
+    can use the latest and best languages and tools for each tier.
+
+    - Improved scalability: Any tier can be scaled independently of the others as needed.
+
+    - Improved reliability: An outage in one tier is less likely to impact the availability 
+    or performance of the other tiers.
+
+    - Improved security: Because the presentation tier and data tier can't communicate 
+    directly, a well-designed application tier can function as an internal firewall, 
+    preventing SQL injections and other malicious exploits.
