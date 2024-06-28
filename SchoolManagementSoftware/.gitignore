@@ -1,2 +1,7 @@
 # Folder
 bin/
+.vscode/
+
+#File
+test.java
+settings.json

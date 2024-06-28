@@ -1,0 +1,39 @@
+-- AVAILABLE ROLES:
+CREATE TABLE ROLES(
+    ROLE VARCHAR(25) NOT NULL,
+    JOB VARCHAR(25) NOT NULL UNIQUE,
+    TOTAL INT UNSIGNED,
+    REMAIN INT UNSIGNED
+);
+
+
+-- CREATE TABLE subjects (
+--     NAME VARCHAR(20) UNIQUE,
+--     CODE VARCHAR(9) UNIQUE
+-- );
+
+
+-- CREATE TABLE student (
+--     ID VARCHAR(9) NOT NULL UNIQUE AUTO_INCREMENT,
+--     NAME VARCHAR(30) NOT NULL,
+--     GPA DECIMAL(2,2) DEFAULT '0'
+-- );
+
+
+-- INSERT INTO student VALUES("200000509","Long",3.92);
+
+-- DESCRIBE subjects;
+
+-- SELECT * FROM student;
+
+-- DROP TABLE student;
+
+-- UPDATE student
+-- SET NAME = 'Nam'
+-- WHERE NAME = 'Long' OR NAME = 'Nga'
+
+-- DELETE FROM student
+-- WHERE NAME = 'Long'
+
+-- SELECT student.NAME FROM student
+-- ORDER BY ID, NAME
